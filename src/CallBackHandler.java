@@ -16,10 +16,10 @@ public class CallBackHandler implements CallBack {
 		service.execute(new CreateThing(thing, CallBackHandler.this));
 		break;
 	    case ESPER:
-		service.execute(new ExecuteSperRules(thing, CallBackHandler.this));
+		service.execute(new ProcessEsperRules(thing, CallBackHandler.this));
 		break;
 	    case UPDATECACHE:
-		service.execute(new ExecuteUpdateCache(thing, CallBackHandler.this));
+		service.execute(new UpdateCache(thing, CallBackHandler.this));
 		break;
 	    default:
 		break;

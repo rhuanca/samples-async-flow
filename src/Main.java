@@ -30,8 +30,8 @@ public class Main {
 	    String id = "" + (i + 1);
 	    Thing thing = new Thing(id, id);
 	    new CreateThing(thing, null).run();
-	    new ExecuteSperRules(thing, null).run();
-	    new ExecuteUpdateCache(thing, null).run();
+	    new ProcessEsperRules(thing, null).run();
+	    new UpdateCache(thing, null).run();
 	}
 	long t1 = System.currentTimeMillis();
 	Log.log("### sync finished ###");
