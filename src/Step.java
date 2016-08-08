@@ -1,4 +1,4 @@
 
-public interface Step extends Runnable {
-
+public interface Step {
+    public void doit(Thing thing);
 }

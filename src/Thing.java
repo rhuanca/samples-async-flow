@@ -1,14 +1,14 @@
 
 public class Thing {
-
     private String id;
     private String name;
     private String desc;
     private String zone;
+    private int timestamp;
 
-    public Thing(String id, String name) {
+    public Thing(String id, int timestamp) {
         this.id = id;
-        this.name = name;
+        this.name = id;
         this.desc = "";
         this.zone = "";
     }

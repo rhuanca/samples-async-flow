@@ -1,4 +1,4 @@
 
 public enum Steps {
-    CREATE, ESPER, UPDATECACHE
+    ENTER, CREATE, ESPER, UPDATECACHE
 }

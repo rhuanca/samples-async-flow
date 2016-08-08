@@ -1,22 +1,14 @@
 
 public class ProcessEsperRules implements Step {
-    private Thing thing;
-    private CallBack callback;
-
-    public ProcessEsperRules(Thing thing, CallBack callback) {
-        this.thing = thing;
-        this.callback = callback;
-    }
 
     @Override
-    public void run() {
+    public void doit(Thing thing) {
 	Log.log("Esper rules - thing id: " + thing.getId());
         try {
     	Thread.sleep(20);
         } catch (InterruptedException e) {
     	// nothing to do
         }
-        if(callback!=null)
-    	callback.completed(thing, Steps.UPDATECACHE);
     }
+
 }
