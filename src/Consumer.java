@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 public class Consumer extends Thread implements Callback {
     ArrayBlockingQueue<ThingWrapper> queue;
 
-    ExecutorService service = Executors.newFixedThreadPool(50);
+    ExecutorService service = Executors.newFixedThreadPool(250);
 
     EnterFlow enterFlow;
     CreateThing createThing;
