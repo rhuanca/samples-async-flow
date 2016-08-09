@@ -12,7 +12,7 @@ public class ProcessEsperRules implements Step {
     public void run() {
 	Log.log("Esper rules - thing id: " + thing.getId());
         try {
-    	Thread.sleep(20);
+    	Thread.sleep(40);
         } catch (InterruptedException e) {
     	// nothing to do
         }

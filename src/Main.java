@@ -42,10 +42,10 @@ public class Main {
 	int numberOfTags = 500;
 	
 	long async = async(numberOfTags);
-	// long sync = sync(numberOfTags);
+	long sync = sync(numberOfTags);
 	
 	Log.log("For " + numberOfTags + " things");
 	Log.log("Async took: " + async + " millis");
-	// Log.log("Sync took: " + sync + " millis");
+	Log.log("Sync took: " + sync + " millis");
     }
 }

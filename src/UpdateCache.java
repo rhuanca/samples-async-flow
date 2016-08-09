@@ -13,7 +13,7 @@ public class UpdateCache implements Step {
     public void run() {
 	Log.log("Update cache - thing id: " + thing.getId());
         try {
-    	Thread.sleep(20);
+    	Thread.sleep(40);
         } catch (InterruptedException e) {
     	// nothing to do
         }
